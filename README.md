@@ -60,3 +60,5 @@ p.to_s
 ```
 
 Values does NOT have all the features of Struct (nor is it meant to).
+
+[![Circle CI](https://circleci.com/gh/marcomorain/Values.svg?style=svg)](https://circleci.com/gh/marcomorain/Values)
