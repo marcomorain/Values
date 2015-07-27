@@ -10,6 +10,6 @@ group :development do
   gem "bundler", "~> 1.0"
   gem "jeweler", "~> 1.8.4"
   gem "simplecov", ">= 0"
-  gem 'rspec_junit_formatter', :git => 'git@github.com:circleci/rspec_junit_formatter.git'
+  gem 'rspec_junit_formatter'
 end
 
