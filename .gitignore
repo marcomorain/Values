@@ -10,6 +10,11 @@ doc
 
 # bundler
 .bundle
+Gemfile.lock
+
+# rvm
+.ruby-version
+.ruby-gemset
 
 # jeweler generated
 pkg

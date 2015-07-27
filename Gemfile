@@ -1,15 +1,18 @@
-source "http://rubygems.org"
-# Add dependencies required to use your gem here.
-# Example:
-#   gem "activesupport", ">= 2.3.5"
+source 'https://rubygems.org'
 
-# Add dependencies to develop your gem here.
-# Include everything needed to run rake, tests, features, etc.
-group :development do
-  gem "rspec", "~> 2.11.0"
-  gem "bundler", "~> 1.0"
-  gem "jeweler", "~> 1.8.4"
-  gem "simplecov", ">= 0"
-  gem 'rspec_junit_formatter'
+group :test do
+  gem 'rake', '>= 10.4'
+  if RUBY_VERSION >= '1.9'
+    gem 'codecov', :require => false
+  end
 end
 
+if defined?(RUBY_ENGINE) && RUBY_ENGINE == 'ruby' && RUBY_VERSION >= '1.9'
+  group :doc do
+    gem 'yard'
+    gem 'redcarpet'
+    gem 'github-markup'
+  end
+end
+
+gemspec
